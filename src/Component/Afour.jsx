@@ -1,6 +1,6 @@
 import '../Component/Afour.css';
 import '@fontsource/dancing-script';
-import Img from '../Assets/love2.jpg';
+import Img from '../assets/love2.jpg';
 
 const Afour = () => {
   return (
