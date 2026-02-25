@@ -1,5 +1,5 @@
 import './Fhero.css'
-import IMage from '../assets/King.jpg'
+import IMage from '../assets/king.jpg'
 const Fhero = () => {
   return (
     <div className='section'>
