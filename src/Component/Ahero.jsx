@@ -1,5 +1,5 @@
 import '../Component/Ahero.css'
-import Img from '../Assets/card.jpg'
+import Img from '../assets/card.jpg'
 import '@fontsource/dancing-script'
 const Ahero = () => {   
     return (
