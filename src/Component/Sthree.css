@@ -1,0 +1,66 @@
+
+
+
+
+.Section4{
+display: flex;
+justify-content: center;
+}
+h1{
+        font-size: 3rem;
+        color: #b08968;
+        margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+
+    }
+    p{
+        font-size: 1rem;
+        color: #000;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .img-core{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20;
+
+        img{
+            width: 400;
+            height: 400;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    /* .image{
+        width: 400;
+        height: 400;
+        object-fit: cover;
+    } */
+     @media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        padding-bottom: -100em;
+    }
+
+    p {
+        font-size: 1rem;
+        padding-top: 4em;
+    
+    }
+
+    .img-core img {
+        width: 60%;
+        height: 30vh;
+        
+    }
+}
+
+     
+
+
+

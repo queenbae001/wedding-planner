@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.shero {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px; /* better spacing */
+    color: #b08968;
+}
+
+.shero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.shero p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    text-align: start;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .shero h1 {
+        font-size: 2.5rem;
+    }
+
+    .shero p {
+        font-size: 1.1rem;
+        max-width: 700px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    
+
+    .shero h1 {
+        font-size: 3em;
+    }
+
+    .shero p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .shero h1 {
+        font-size: 2.6em;
+        padding-top: 10vh;
+        
+    }
+
+    .shero p {
+        font-size: 1.45em;
+        padding-bottom: 80vh;
+        
+    }
+    .shero {
+        width: 100%;
+    min-height: 20vh;
+    
+    
+    }
+}

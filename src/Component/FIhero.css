@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section2 {
+  background: white;
+  padding: 60px 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Remove fixed height */
+.write-up2 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.write-up2 h1 {
+  font-size: 3rem;
+  color: #b08968;
+}
+
+.write-up2 p {
+  font-size: 1rem;
+  color: black;
+  padding-top: 20px;
+  line-height: 1.7;
+}
+
+.write-up2 h2 {
+  padding-top: 10px;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+.img2 {
+  width: 45%;
+  border-radius: 20px;
+  padding-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+/* 📱 Tablets */
+@media (max-width: 768px) {
+  .section2 {
+    padding: 40px 20px;
+  }
+
+  .write-up2 h1 {
+    font-size: 2.2rem;
+  }
+
+  .write-up2 p {
+    font-size: 1rem;
+  }
+
+  .img2 {
+    width: 80%;
+  }
+}
+
+/* 📱 Mobile Phones */
+@media (max-width: 480px) {
+  .section2 {
+    padding: 30px 15px;
+  }
+
+  .write-up2 h1 {
+    font-size: 1.8rem;
+  }
+
+  .write-up2 p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .img2 {
+    width: 100%;
+  }
+}

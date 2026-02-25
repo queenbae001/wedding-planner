@@ -1,0 +1,355 @@
+/* ROOT SECTION */
+.services-section {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #faf7f5 0%, #f5f0eb 100%);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* HEADER */
+.services-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 70px;
+}
+
+.services-header h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: 500;
+  color: #b08968;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6f6f6f;
+  font-style: italic;
+}
+
+.services-header p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #7a7a7a;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* SERVICE IMAGE */
+.service-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.08);
+}
+
+/* TAG */
+.service-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #b08968 0%, #9a7456 100%);
+  color: #ffffff;
+  font-size: 11px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(176, 137, 104, 0.3);
+}
+
+/* SERVICE CONTENT */
+.service-content {
+  padding: 32px 28px;
+}
+
+/* TEXT */
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+  font-family: "Dancing Script", cursive;
+}
+
+.service-card h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b08968;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6a6a6a;
+  margin-bottom: 24px;
+  text-align: start;
+}
+
+/* BUTTON */
+.service-button {
+  background: linear-gradient(135deg, #b08968 0%, #9a7456 100%);
+  border: none;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(176, 137, 104, 0.2);
+}
+
+.service-button:hover {
+  background: linear-gradient(135deg, #9a7456 0%, #8a6446 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(176, 137, 104, 0.35);
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+/* MODAL CONTENT */
+.modal-content {
+  background: #ffffff;
+  border-radius: 24px;
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* MODAL IMAGE */
+.modal-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MODAL BODY */
+.modal-body {
+  padding: 40px 34px;
+}
+
+/* MODAL TITLE */
+.modal-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  color: #b08968;
+  margin-bottom: 8px;
+}
+
+.modal-subtitle {
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.modal-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6a6a6a;
+  margin-bottom: 30px;
+}
+
+/* FEATURES LIST */
+.features-list h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.features-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #5a5a5a;
+  padding: 8px 0;
+}
+
+.checkmark {
+  color: #b08968;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* MODAL FOOTER */
+.modal-footer {
+  padding-top: 30px;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #6a6a6a;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.contact-button {
+  background: linear-gradient(135deg, #b08968 0%, #9a7456 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(176, 137, 104, 0.3);
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #9a7456 0%, #8a6446 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(176, 137, 104, 0.4);
+}
+
+/* CLOSE BUTTON */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: #fff;
+  color: #b08968;
+  transform: rotate(90deg);
+}
+
+/* ANIMATIONS */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 16px;
+  }
+
+  .services-header h2 {
+    font-size: 36px;
+  }
+
+  .header-subtitle {
+    font-size: 16px;
+  }
+
+  .services-grid {
+    gap: 28px;
+  }
+
+  .service-image-container {
+    height: 220px;
+  }
+
+  .modal-content {
+    max-width: 95vw;
+  }
+
+  .modal-body {
+    padding: 28px 20px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .features-list ul {
+    grid-template-columns: 1fr;
+  }
+}

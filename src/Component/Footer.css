@@ -1,0 +1,154 @@
+/* ===== FOOTER BASE ===== */
+.footer {
+  background: linear-gradient(135deg, #edcaad, #fce7f3);
+  color: #333;
+  padding: 60px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== SECTIONS ===== */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+              color: #b08968;
+                position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #895830;
+;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+/* ===== BRAND SECTION ===== */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #b08968;
+
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ===== LINKS ===== */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+     color: green;
+  padding-left: 5px;
+}
+
+/* ===== CONTACT ===== */
+.contact p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: start;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #f3c4d7;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ============================= */
+/* ===== TABLET RESPONSIVE ===== */
+/* ============================= */
+@media (max-width: 992px) {
+  .footer-container {
+    gap: 30px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+  
+}
+
+/* ============================= */
+/* ===== MOBILE RESPONSIVE ===== */
+/* ============================= */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 15px 15px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-section ul li a:hover {
+    padding-left: 0;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .brand p,
+  .contact p,
+  .footer-section ul li a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

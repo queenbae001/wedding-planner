@@ -1,0 +1,45 @@
+.Afour-container {
+  display: flex;
+  align-items: center; /* vertically center the image and text */
+  gap: 30px; /* space between image and text */
+  padding: 20px;
+}
+.Afour-image {
+  width: 50%; /* adjust image size */
+  height: auto;
+  border-radius: 10px; /* optional: rounded corners */
+  object-fit: cover;
+}
+
+.Afour-text {
+  width: 50%; /* text takes the other half */
+}
+
+.Afour-text h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #b08968;
+
+  padding-bottom: 20px;
+}
+
+.Afour-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: start;
+}
+@media screen and (max-width: 768px) {
+  .Afour-container {
+    flex-direction: column; /* stack image and text vertically on small screens */
+    gap: 20px;
+  }
+  
+  .Afour-image, .Afour-text {
+    width: 100%; /* full width for both image and text */
+  }
+  
+  .Afour-text h1 {
+    font-size: 2rem; /* smaller heading on mobile */
+  }
+}

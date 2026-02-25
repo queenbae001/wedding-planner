@@ -1,0 +1,89 @@
+/* Background */
+.contact-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Paper Card */
+.contact-paper {
+  padding: 40px;
+  border-radius: 20px !important;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.contact-paper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Title */
+.contact-title {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 2.2rem !important;
+  color: #2c3e50;
+  margin-bottom: 10px !important;
+}
+
+/* Email & Phone Links */
+.contact-paper a {
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.contact-paper a:hover {
+  color: #1976d2;
+  transform: translateX(3px);
+}
+
+/* Buttons */
+.MuiButton-contained {
+  background: linear-gradient(45deg, #1976d2, #42a5f5) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease !important;
+}
+
+.MuiButton-contained:hover {
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #1565c0, #1e88e5) !important;
+}
+
+.MuiButton-outlinedSuccess {
+  border: 2px solid #25d366 !important;
+  color: #25d366 !important;
+  font-weight: 600 !important;
+  transition: 0.3s ease !important;
+}
+
+.MuiButton-outlinedSuccess:hover {
+  background-color: #25d366 !important;
+  color: white !important;
+  transform: scale(1.02);
+}
+
+/* Input fields */
+.MuiTextField-root {
+  background: #f9fbfd;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-paper {
+    padding: 25px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem !important;
+  }
+  @media (max-width: 600px) {
+  .contact-paper a {
+    font-size: 0.85rem;
+  }
+}
+}
